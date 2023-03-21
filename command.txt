@@ -1,0 +1,285 @@
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (main)
+$ git push -u origin main
+Everything up-to-date
+branch 'main' set up to track 'origin/main'.
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (main)
+$ git add .
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (main)
+$ git commit -m "file m1 added"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (main)
+$ git add .
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (main)
+$ git commit -m "file m1 added"
+[main 837a526] file m1 added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 m1.txt
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (main)
+$ git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 273 bytes | 273.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/vinitnadargi02/newDemo.git
+   1a0a95b..837a526  main -> main
+branch 'main' set up to track 'origin/main'.
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (main)
+$ git log
+commit 837a52622e102145ff9746a8dc785998793dc9ce (HEAD -> main, origin/main, origin/HEAD)
+Author: vinit nadargi <vinitnadargi02@gmail.com>
+Date:   Tue Mar 21 14:26:59 2023 +0530
+
+    file m1 added
+
+commit 1a0a95b9143442a6e901297ceacd8b90078034a3
+Author: vinitnadargi02 <91338745+vinitnadargi02@users.noreply.github.com>
+Date:   Tue Mar 7 14:44:00 2023 +0530
+
+    Initial commit
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (main)
+$ git log oneline
+fatal: ambiguous argument 'oneline': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (main)
+$ git log --oneline
+837a526 (HEAD -> main, origin/main, origin/HEAD) file m1 added
+1a0a95b Initial commit
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (main)
+$ git add .
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (main)
+$ git push -u origin main
+Everything up-to-date
+branch 'main' set up to track 'origin/main'.
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (main)
+$ git commit -m "file m2 added"
+[main 37e5f30] file m2 added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 m2.txt
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 269 bytes | 269.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/vinitnadargi02/newDemo.git
+   837a526..37e5f30  main -> main
+branch 'main' set up to track 'origin/main'.
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (main)
+$ git branch
+* main
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (main)
+$ git branch feature
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (main)
+$ git branch
+  feature
+* main
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (main)
+$ git branch checkout feature
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (main)
+$ git branch
+  checkout
+  feature
+* main
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (main)
+$ git branch checkout "feature"
+fatal: a branch named 'checkout' already exists
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (main)
+$ git branch
+  checkout
+  feature
+* main
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (main)
+$ git checkout feature
+Switched to branch 'feature'
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (feature)
+$ git add .
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (feature)
+$ git commit -m "file f1 added"
+[feature 3068632] file f1 added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 f1.txt
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (feature)
+$ git push -u origin feature
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 240 bytes | 240.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'feature' on GitHub by visiting:
+remote:      https://github.com/vinitnadargi02/newDemo/pull/new/feature
+remote:
+To https://github.com/vinitnadargi02/newDemo.git
+ * [new branch]      feature -> feature
+branch 'feature' set up to track 'origin/feature'.
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (feature)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (main)
+$ git add .
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (main)
+$ git commit -m "file m3 added"
+[main 35fd2b2] file m3 added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 m3.txt
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (main)
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 233 bytes | 233.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/vinitnadargi02/newDemo.git
+   37e5f30..35fd2b2  main -> main
+branch 'main' set up to track 'origin/main'.
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (main)
+$ git log --oneline
+35fd2b2 (HEAD -> main, origin/main, origin/HEAD) file m3 added
+37e5f30 (checkout) file m2 added
+837a526 file m1 added
+1a0a95b Initial commit
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (main)
+$ git checkout feature
+Switched to branch 'feature'
+Your branch is up to date with 'origin/feature'.
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (feature)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (main)
+$ git merge feature
+Merge made by the 'ort' strategy.
+ f1.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 f1.txt
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (main)
+$ git checkout feature
+Switched to branch 'feature'
+Your branch is up to date with 'origin/feature'.
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (feature)
+$ git add .
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (feature)
+$ git commit -m "file f2 added"
+[feature 1c759df] file f2 added
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 f2.txt
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (feature)
+$ git push -u origin feature
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 227 bytes | 227.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/vinitnadargi02/newDemo.git
+   3068632..1c759df  feature -> feature
+branch 'feature' set up to track 'origin/feature'.
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (feature)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (main)
+$ git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 269 bytes | 269.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/vinitnadargi02/newDemo.git
+   35fd2b2..9e771f2  main -> main
+branch 'main' set up to track 'origin/main'.
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (main)
+$ git checkout feature
+Switched to branch 'feature'
+Your branch is up to date with 'origin/feature'.
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (feature)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (main)
+$ git log --oneline
+9e771f2 (HEAD -> main, origin/main, origin/HEAD) Merge branch 'feature'
+35fd2b2 file m3 added
+3068632 file f1 added
+37e5f30 (checkout) file m2 added
+837a526 file m1 added
+1a0a95b Initial commit
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (main)
+$ git config --global user.name
+vinit nadargi
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (main)
+$ git config --global user.email
+vinitnadargi02@gmail.com
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (main)
+$ ^C
+
+Admin@DESKTOP-QCUJ0MV MINGW64 ~/Desktop/vinit/newDemo/newDemo (main)
+$
